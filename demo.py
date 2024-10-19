@@ -133,8 +133,7 @@ Average response time: 4.5
 Number of high priority cases: 1.0
 Account age: 5.0
 Number of products: 2.0
-
-Predicted probability of churn for example 1: 0.0759
+Predicted probability of churn for example 1: 0.7901
 [/in-house model outputs]
 
 
