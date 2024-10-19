@@ -1,6 +1,6 @@
 # Compound AI: Combining Neural Networks and Language Models for Efficient Customer Interactions
 
-In the world of artificial intelligence (AI), combining different types of models to create a more powerful and versatile system is a common practice. This approach, known as compound AI, allows us to leverage the strengths of different AI models to achieve complex tasks. In this blog post, we will discuss how to create a compound AI system that combines a neural network for customer churn prediction and a language model for generating proactive communication.
+Compound AI, allows us to leverage the strengths of different AI models to achieve complex tasks. In this blog post, we will discuss how to create a compound AI system that combines a neural network for customer churn prediction and a language model for generating proactive communication.
 
 ## The Power of Compound AI
 
