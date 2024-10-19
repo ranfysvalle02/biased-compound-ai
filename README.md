@@ -6,7 +6,7 @@ Compound AI, allows us to leverage the strengths of different AI models to achie
 
 Compound AI is a powerful concept that allows us to create systems that can handle complex tasks that would be difficult for a single model to achieve. In our case, we are combining a neural network, which is excellent at pattern recognition and prediction tasks, with a language model, which excels at generating human-like text.
 
-The neural network is used to predict customer churn based on various customer features. This prediction can provide valuable insights into which customers are most likely to stop doing business with a company. However, simply knowing which customers are likely to churn is not enough. We need to communicate with these customers proactively to address their concerns and improve their experience. This is where the language model comes in.
+The neural network is used to predict customer churn based on various customer details (features). This prediction can provide valuable insights into which customers are most likely to stop doing business with a company. However, simply knowing which customers are likely to churn is not enough. We need to communicate with these customers proactively to address their concerns and improve their experience. This is where the language model comes in.
 
 ## Neural Networks for Customer Churn Prediction
 
