@@ -13,32 +13,3 @@ The neural network is used to predict customer churn based on various customer f
 Language models are AI models that can generate human-like text. They can be used to generate emails, chat responses, and other forms of communication based on certain inputs. In our case, we use the GPT-4 model from OpenAI to generate an email based on the churn prediction made by our neural network and some other context augmentation.
 
 The language model takes the churn prediction as input, along with additional context such as the company's policies. It then generates an email that addresses the customer's potential concerns, provides information about the company's services, and offers solutions to improve the customer's experience.
-
-Here's a simplified version of the code used to generate the email:
-
-```python
-# Make predictions on new data samples
-new_data_samples = torch.tensor([
-    [3.0, 4.5, 1.0, 5.0, 2.0],
-], dtype=torch.float32)
-
-model.eval()
-with torch.no_grad():
-    predictions = model(new_data_samples)
-
-# Use the AzureOpenAI API to generate an email based on the churn prediction
-ai_message = AzureOpenAI(azure_endpoint=AZURE_OPENAI_ENDPOINT,api_version="2023-07-01-preview",api_key=AZURE_OPENAI_API_KEY).chat.completions.create(
-            model="gpt-4o",
-            messages=[
-                {"role":"system", "content":"You are an AI assistant for the Customer Success Org of Acme, Inc."},
-                {"role": "user", "content":f"using this context \n{augmented_context}\n\n generate an email to respond to: {Q}"}
-                ])
-ai_message = ai_message.choices[0].message.content
-print(ai_message)
-```
-
-In this code, `augmented_context` is a string that contains additional context for the language model, and `Q` is a string that contains the question or prompt for the language model.
-
-## Conclusion
-
-By combining a neural network for customer churn prediction and a language model for proactive communication, we can create a powerful compound AI system that not only predicts customer churn but also generates proactive communication to address customer concerns and improve their experience. This approach showcases the power of compound AI and its potential to transform customer retention strategies.
