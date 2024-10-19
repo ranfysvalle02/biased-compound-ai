@@ -124,20 +124,6 @@ with torch.no_grad():
 for i in range(predictions.shape[0]):
     print(f"Predicted probability of churn for example {i + 1}: {predictions[i].item():.4f}")
 
-"""
-curl 'https://<your-domain>-be.glean.com/rest/api/v1/chat' \
-    -H 'Authorization: Bearer <TOKEN>' \
-    -H 'X-Scio-Actas: john.doe@yourcompany.com' \
-    --data-raw '{
-    "stream": false,
-    "messages": [{
-        "author": "USER",
-        "fragments": [{
-        "text": "What strategies can we implement to reduce customer churn?"
-        }]
-    }]
-    }' --compressed
-"""
 
 augmented_context = """
 [in-house model outputs]
